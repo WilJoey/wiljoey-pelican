@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WilJoey holiucan</title><link href="http://wiljoey.github.io/" rel="alternate"></link><link href="http://wiljoey.github.io/feeds/foo.atom.xml" rel="self"></link><id>http://wiljoey.github.io/</id><updated>2014-03-25T09:36:00+08:00</updated><entry><title>hello</title><link href="http://wiljoey.github.io/posts/2014/03/hello/" rel="alternate"></link><updated>2014-03-25T09:36:00+08:00</updated><author><name>WilJoey</name></author><id>tag:wiljoey.github.io,2014-03-25:posts/2014/03/hello/</id><summary type="html">&lt;h2&gt;first test&lt;/h2&gt;
+&lt;p&gt;abc
+123&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;Magic&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="foo"></category><category term="bar"></category></entry></feed>

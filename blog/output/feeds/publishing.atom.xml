@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WilJoey holiucan</title><link href="http://wiljoey.github.io/" rel="alternate"></link><link href="http://wiljoey.github.io/feeds/publishing.atom.xml" rel="self"></link><id>http://wiljoey.github.io/</id><updated>2010-12-03T10:20:00+08:00</updated><entry><title>My super title</title><link href="http://wiljoey.github.io/posts/2010/12/my-super-post/" rel="alternate"></link><updated>2010-12-03T10:20:00+08:00</updated><author><name>WilJoey</name></author><id>tag:wiljoey.github.io,2010-12-03:posts/2010/12/my-super-post/</id><summary type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;escapeHtml&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="bp"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="bp"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="nx"&gt;function&lt;/span&gt; &lt;span class="nb"&gt;render&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;target&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;repos&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="n"&gt;fragment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;target&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;;
+        fragment += &amp;#39;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;list-group&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;github&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&amp;#39;;
+
+        for (i = 0; i &lt;span class="nt"&gt;&amp;lt; repos.length&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="err"&gt;i++)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+            &lt;span class="err"&gt;fragment&lt;/span&gt; &lt;span class="err"&gt;+=&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;list-group-item&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;#39; + repos&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="s"&gt;.html_url + &amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&amp;#39; + repos&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;.name + &amp;#39;&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;&amp;lt;small&amp;gt;&lt;/span&gt;&amp;#39; + escapeHtml(repos&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;.description || &amp;#39;&amp;#39;) + &amp;#39;&lt;span class="nt"&gt;&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&amp;#39;;
+        }
+        fragment += &amp;#39;&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&amp;#39;;
+        t.innerHTML = fragment;
+    }
+    return {
+        showRepos: function(options) {
+            $.ajax({
+                url: &amp;quot;https://api.github.com/users/&amp;quot; + options.user + &amp;quot;/repos?callback=?&amp;quot;,
+                dataType: &amp;#39;jsonp&amp;#39;,
+                error: function(err) {
+                    $(options.target + &amp;#39; li.loading&amp;#39;).addClass(&amp;#39;error&amp;#39;).text(&amp;quot;Error loading feed&amp;quot;);
+                },
+                success: function(data) {
+                    var repos = &lt;span class="cp"&gt;[]&lt;/span&gt;;
+                    if (!data || !data.data) {
+                        return;
+                    }
+                    for (var i = 0; i &lt;span class="nt"&gt;&amp;lt; data.data.length&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="err"&gt;i++)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                        &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(options.skip_forks&lt;/span&gt; &lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;data.data&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="err"&gt;.fork)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                            &lt;span class="err"&gt;continue;&lt;/span&gt;
+                        &lt;span class="err"&gt;}&lt;/span&gt;
+                        &lt;span class="err"&gt;repos.push(data.data&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="err"&gt;);&lt;/span&gt;
+                    &lt;span class="err"&gt;}&lt;/span&gt;
+                    &lt;span class="err"&gt;repos.sort(function(a,&lt;/span&gt; &lt;span class="err"&gt;b)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                        &lt;span class="err"&gt;var&lt;/span&gt; &lt;span class="na"&gt;aDate =&lt;/span&gt; &lt;span class="s"&gt;new&lt;/span&gt; &lt;span class="err"&gt;Date(a.pushed_at).valueOf(),&lt;/span&gt;
+                            &lt;span class="na"&gt;bDate =&lt;/span&gt; &lt;span class="s"&gt;new&lt;/span&gt; &lt;span class="err"&gt;Date(b.pushed_at).valueOf();&lt;/span&gt;
+
+                        &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="na"&gt;aDate =&lt;/span&gt;&lt;span class="s"&gt;==&lt;/span&gt; &lt;span class="err"&gt;bDate)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                            &lt;span class="err"&gt;return&lt;/span&gt; &lt;span class="err"&gt;0;&lt;/span&gt;
+                        &lt;span class="err"&gt;}&lt;/span&gt;
+                        &lt;span class="err"&gt;return&lt;/span&gt; &lt;span class="err"&gt;aDate&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; bDate ? -1 : 1;
+                    });
+
+                    if (options.count) {
+                        repos.splice(options.count);
+                    }
+                    render(options.target, repos);
+                }
+            });
+        }
+    };
+})();
+
+自動結束
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
